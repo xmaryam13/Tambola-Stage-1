@@ -31,6 +31,8 @@ def saveName():
     
     SERVER.send(playerName.encode())
     
+def recievedMsg():
+    pass
 
 def askPlayerName():
     global playerName 
