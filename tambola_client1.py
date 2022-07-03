@@ -4,6 +4,16 @@ from threading import Thread
 import random
 from PIL import ImageTk, Image
 
+screen_width = None
+screen_height = None
+SERVER = None
+PORT = None
+IP_ADDRESS = None
+playerName = None
+canvas1 = None
+nameEntry = None
+nameWindow = None
+
 def setup():
     global SERVER
     global PORT
@@ -49,7 +59,7 @@ def askPlayerName():
     
     bg = ImageTk.PhotoImage(file = 'C:/Users/MBajw/OneDrive/Documents/Coding.background_project.png')
     
-    canvas1 = Canvas(nameWindow, widht = 500, height= 500)
+    canvas1 = Canvas(nameWindow, width = 500, height= 500)
     canvas1.pack(fill='both', expand= True)  
     
     canvas1.create_image(0,0, image= bg, anchor='nw')
