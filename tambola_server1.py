@@ -41,3 +41,5 @@ def acceptConnection():
         CLIENTS[player_name]['turn'] = False
         
         print(f"Connection established with {player_name} : {addr}")
+        
+acceptConnection()        
