@@ -43,3 +43,4 @@ def acceptConnection():
         print(f"Connection established with {player_name} : {addr}")
         
 acceptConnection()        
+setup()
