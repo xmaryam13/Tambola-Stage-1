@@ -14,19 +14,6 @@ canvas1 = None
 nameEntry = None
 nameWindow = None
 
-def setup():
-    global SERVER
-    global PORT
-    global IP_ADDRESS
-    
-    PORT = 6000
-    IP_ADDRESS = '127.0.0.1'
-    
-    SERVER = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    SERVER.connect((IP_ADDRESS,PORT))
-    
-    thread = Thread(target=receivedMsg)
-    thread.start()
     
     
 def saveName():
@@ -73,3 +60,19 @@ def askPlayerName():
     
     nameWindow.resizable(True, True)
     nameWindow.mainloop()
+    
+def setup():
+    global SERVER
+    global PORT
+    global IP_ADDRESS
+    
+    PORT = 6000
+    IP_ADDRESS = '127.0.0.1'
+    
+    SERVER = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    SERVER.connect((IP_ADDRESS,PORT))
+    
+    askPlayerName()
+    
+    thread = Thread(target=receivedMsg)
+    thread.start()
