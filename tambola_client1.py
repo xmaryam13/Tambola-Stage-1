@@ -74,5 +74,4 @@ def setup():
     
     askPlayerName()
     
-    thread = Thread(target=receivedMsg)
-    thread.start()
+    setup()
