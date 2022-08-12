@@ -18,6 +18,7 @@ def setup():
     SERVER.bind((IP_ADDRESS,PORT))
     
     SERVER.listen(10)
+    acceptConnection()
     
     print("\t\t\t\tSERVER IS WAITING FOR INCOMMING CONNECTIONS...\n")
     
@@ -42,5 +43,4 @@ def acceptConnection():
         
         print(f"Connection established with {player_name} : {addr}")
         
-acceptConnection()        
 setup()
