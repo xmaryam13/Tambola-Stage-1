@@ -74,4 +74,4 @@ def setup():
     
     askPlayerName()
     
-    setup()
+setup()
