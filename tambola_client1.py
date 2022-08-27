@@ -53,7 +53,7 @@ def askPlayerName():
     canvas1.create_image(0,0, image= bg, anchor='nw')
     canvas1.create_text( screen_width/4.5, screen_height/8, text = 'Enter Name', font=('Chalkboard SE',60),fil='black')
     
-    nameEntry = Entry(nameWindow, widht=15, justify='center', font= ('Chalkboard SE',30),bd=5, bg='white')  
+    nameEntry = Entry(nameWindow, width=15, justify='center', font= ('Chalkboard SE',30),bd=5, bg='white')
     nameEntry.place(x= screen_width/7, y= screen_height/5.5)
     
     button = Button(nameWindow, text='Save', font= ('Chalkboard SE',30),width=11, command = saveName, height=2, bg= '#80deea',bd=3)
